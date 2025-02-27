@@ -2,7 +2,6 @@
 
 /* DEFAULT */
 
-
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -14,27 +13,31 @@ h1 {
     color:rgb(0, 0, 0);
     text-align: center;
     font-size: 250px;
+    margin-top: 200px;
+    margin-bottom: 0;
 }
 
-h2 {
-    font-size: 80px;;
-    text-align: center;
-}
 
 p {
-    font-family: "lora", serif;
-    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:400;
+    font-size: 15px;
 }
 
 a {
-    font-family: "Lilita One";
+    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
-    font-size: 30px; 
+    font-size: 20px; 
+    font-weight: 400;
+    padding: 10px;
+    text-decoration: none;
 }
 
 a:hover {
     color: white;
+    background-color: black;
+    border-radius: 30px;
 }
 
 /* IMAGE MODIEFIERS */
@@ -55,20 +58,17 @@ a:hover {
 
 
 /* HEADER */
+
 .header-flex {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
+    align-items: center;
 }
 
 .title-page {
     background-color: rgb(148, 148, 148);
-}
-
-.nav-links {
-    padding: 20px;
-
+    min-height: 820px;
 }
 
 /* HEADER RESPONSIVENESS */
@@ -91,6 +91,19 @@ a:hover {
        display: block; /* Show the hamburger button on smaller screens */
      }
    }
+
+/* HERO */
+
+.hero-area{
+    text-align: center;
+}
+
+.register-button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
 
 
 /* FORM MODIFIERS */
