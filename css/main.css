@@ -2,25 +2,39 @@
 
 /* DEFAULT */
 
+
 body {
-    background-color: rgb(140, 95, 183);
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
-    font-family: "Lilita One", serif;
-    color:rgb(255, 255, 255)
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 250px;
+}
+
+h2 {
+    font-size: 80px;;
+    text-align: center;
 }
 
 p {
     font-family: "lora", serif;
+    text-align: center;
 }
 
 a {
     font-family: "Lilita One";
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
-    font-size: 30px;
-    
+    font-size: 30px; 
+}
+
+a:hover {
+    color: white;
 }
 
 /* IMAGE MODIEFIERS */
@@ -31,15 +45,87 @@ a {
     padding: 20px;
 }
 
+.cookie-image {
+    background-image: url(../img/Cookies-test-AI.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    flex-shrink: 0;
+}
+
 
 /* HEADER */
 .header-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding: 20px;
+}
+
+.title-page {
+    background-color: rgb(148, 148, 148);
 }
 
 .nav-links {
     padding: 20px;
 
 }
+
+/* HEADER RESPONSIVENESS */
+
+.menu {
+    display: block; /* Hide the menu by default */
+   }
+   .menu.expanded {
+     display: block;
+   }
+   .hamburger {
+     display: none; /* Hide the hamburger button by default */
+   }
+   
+   @media (max-width: 768px) {
+     .menu {
+       display: none; /* Show the menu on smaller screens */
+     }
+     .hamburger {
+       display: block; /* Show the hamburger button on smaller screens */
+     }
+   }
+
+
+/* FORM MODIFIERS */
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+   }
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: rgb(252, 218, 224);
+    border-radius: 25px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .error {
+    color: red;
+  }
+
+  .form-flex {
+    display: flex;
+  }
+
+   

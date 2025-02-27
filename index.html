@@ -13,7 +13,7 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png">
+  <link rel="icon" href="./img/bakery-items.svg">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,45 +21,104 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  <!-- Place your site's HTML here -->
+<body class="theme-color">
 
-  <header class="header-flex">
-    <img class="logo" src="./img/bakery-items.svg" alt="">
-    <nav class="nav-links">
-      <a href= "./redirectpage.html"> Classes</a>
-      <a href= "./redirectpage.html"> Recipes</a>
-      <a href= "./redirectpage.html"> Shop</a>
-      <a href= "./redirectpage.html"> Register</a>
-     </nav>
+  <header class="title-page">
+
+    <div class="header-flex"> 
+      <img class="logo" src="./img/bakery-items.svg" alt="">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu">
+        <span class="hamburger-icon"></span> Menu
+      </button>
+      <nav id="main-menu" class="nav-links menu">    
+          <a href="./redirectpage.html">Classes</a>    
+          <a href="./redirectpage.html">Recipes</a>     
+          <a href="./redirectpage.html">Shop</a>
+          <a href="./redirectpage.html">Register</a>  
+      </nav>
+    </div>
+
+    <h1>Better Baking</h1>
+
   </header>
-  
-<body>
 
-  <div class="hero-image">
-    <h1>slogan</h1>
-  </div>
 
-  <section>
-    <!-- available courses section -->
+
+  <section class="introduction-flex">
+    <div class="cookie-image">
+      <!-- div exists soley for image -->
+    </div>
+    <div>
+      <h2> Be a better baker today </h2>
+      <p> here's our introduction paragraph</p>
+    </div>
+
+     
   </section>
 
   <section>
     <!-- More info section -->
+    <h1> words</h1>
   </section>
 
   <section>
+
+    <h2>Enroll Now</h2>
+    <p> Be a better baker today</p>
+
+    <form action="./thank-you.html" id="registrationForm">
+
+      <div class="form-flex">
+        <label for="firstName">First Name:</label>
+        <label for="lastName">Last Name:</label>
+      </div>
+
+      <div class="form-flex">
+        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" autofocus
+        placeholder="Jane">
+        <span id="firstNameError" class="error"></span><br><br>
+      
+        <input type="text" id="lastName" name="lastName" required autocomplete="family-name"
+        placeholder="Doe">
+        <span id="lastNameError" class="error"></span><br><br>
+      </div>
+
+      <div class="form-flex">
+        <label for="email">Email:</label>
+      </div>
+      
+      <div class="form-flex">
+        <input type="email" id="email" name="email" required autocomplete="email"
+        placeholder="Janedoe123@gmail.com">
+        <span id="emailError" class="error"></span><br><br>
+      </div>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select a Course</option>
+          <option value="">Cookies and Brownies</option>
+          <option value="">Cakes and Cupcakes</option>
+          <option value="">Pie and Pastries</option>
+          </select><br><br>
+      
+        <input type="checkbox" id="terms" name="terms" >
+        <label for="terms"> I wish to be added to the mailing list to recieve updates, promos, and more</label>
+          <span id="termsError" class="error"></span><br><br>
+      
+        <button type="submit">Register</button>
+    </form>    
     <!-- Register and form section -->
   </section>
 
 </body>
 
 <footer>
+  <h1> words</h1>
 
 </footer>
  
