@@ -28,29 +28,29 @@
 
 <body class="theme-color">
 
-  <header class="title-page">
+  <div class="header-and-hero">
 
-    <div class="header-flex"> 
+    <header class="header-flex"> 
 
       <img class="logo" src="./img/bakery-items.svg" alt="">
-      <button class="hamburger" aria-expanded="false" aria-controls="main-menu">
-        <span class="hamburger-icon"></span> Menu
+      <button class="menu-toggle">
+  
       </button>
-      <nav id="main-menu" class="menu">    
+      <nav id="off-canvas-nav" class="menu">    
           <a href="./redirectpage.html">Classes</a>    
           <a href="./redirectpage.html">Recipes</a>     
           <a href="./redirectpage.html">Shop</a>
           <a href="./redirectpage.html">Register</a>  
       </nav>
-    </div>
+    </header>
 
     <div class="hero-area">
       <h1>Better Baking</h1>
-      <p>Online classes to take you baking to the next level</p>
+      <p class="subtitle">Online classes to take you baking to the next level</p>
       <a class="register-button" href="#"> Register</a>
     </div>
     
-  </header>
+  </div>
 
 
 
@@ -64,12 +64,45 @@
     </div>   
   </section>
 
-
-
   <section>
+    <h2> Our courses</h2>
+    <article>
+      <img class=treats-1 src="./img/sugar-cookie.png">
+      <div>
+        <h3> Cookies and Brownies Course</h3>
+        <p> paragraph explaining all the things this particular course would offer</p>
+        <a class="register-button" href="#"> Register</a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <h3> Cakes and Cupcakes Course</h3>
+        <p> paragraph explaining all the things this particular course would offer</p>
+        <a class="register-button" href="#"> Register</a>
+      </div>
+      <img class=treats-2 src="./img/cupcake.png">
+    </article>
+    <article>
+      <img class=treats-3 src="./img/pie.png">
+      <div>
+        <h3> Pies and Cheesecake</h3>
+        <p> paragraph explaining all the things this particular course would offer</p>
+        <a class="register-button" href="#"> Register</a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <h3> Pastries and doughnuts</h3>
+        <p> paragraph explaining all the things this particular course would offer</p>
+        <a class="register-button" href="#"> Register</a>
+      </div>
+      <img class=treats-4 src="./img/pastry.png">
+    </article>
+  </section>
 
-    <h2>Enroll Now</h2>
-    <p> Be a better baker today</p>
+
+  <section class="form-section">
+    <h2> Enroll Now</h2>
 
     <form action="./thank-you.html" id="registrationForm">
 
@@ -112,13 +145,12 @@
       
         <button type="submit">Register</button>
     </form>    
-    <!-- Register and form section -->
   </section>
 
 </body>
 
 <footer>
-  <h1> words</h1>
+  <p> words </p>
 
 </footer>
  
