@@ -9,7 +9,6 @@ body {
 h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;
     color:rgb(0, 0, 0);
     text-align: center;
     font-size: 250px;
@@ -103,6 +102,80 @@ article:hover {
 }
 
 /* HEADER RESPONSIVENESS */
+/* .menu {
+  display: block;
+  position: fixed;
+    top: 164px;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3sease;
+}
+
+.menu.expanded {
+  display:block;
+  position: fixed;
+  transform: translateX(0);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+} */
+
+.offcanvas-nav {
+  position: relative;
+}
+
+.menu {
+  position: fixed;
+  top: 164px;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+}
+
+.menu.expanded {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  /* Style button */
+}
+
+@media (min-width:768px) {
+  .offcanvas-nav {
+    display: block;
+  }
+  .menu {
+    display: block;
+    position: static;
+    width: auto;
+    transform: none;
+    box-shadow: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+
 
 
 
