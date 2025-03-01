@@ -102,38 +102,7 @@ article:hover {
 }
 
 /* HEADER RESPONSIVENESS */
-/* .menu {
-  display: block;
-  position: fixed;
-    top: 164px;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(100%);
-    transition: transform 0.3sease;
-}
 
-.menu.expanded {
-  display:block;
-  position: fixed;
-  transform: translateX(0);
-}
-
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-
-} */
 
 .offcanvas-nav {
   position: relative;
@@ -156,8 +125,16 @@ article:hover {
   transform: translateX(0);
 }
 
-.menu-toggle {
-  /* Style button */
+/* .menu-toggle {
+  background-image: url("../img/hamburger.png");
+}  */
+
+
+.hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 @media (min-width:768px) {
@@ -314,8 +291,8 @@ form {
     background-color: rgb(252, 218, 224);
     border-radius: 25px;
   }
-  button {
-    background-color: #4CAF50;
+  .button-2 {
+    background-color: #000000;
     color: white;
     padding: 10px 15px;
     border: none;
