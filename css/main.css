@@ -433,6 +433,10 @@ form {
     margin-right: 135px;
    }
 
+   .terms-text {
+    margin-left: 30px;
+   }
+
   input, select, textarea {
     width: 100%;
     padding: 8px;
@@ -466,7 +470,7 @@ form {
   }
 
   .terms {
-    display: grid; grid-template-columns: 16px 30px 1fr;
+    display: grid; grid-template-columns: 20px 1fr;
   }
 
   @media (max-width: 768px) {
