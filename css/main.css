@@ -96,7 +96,7 @@ article:hover {
 }
 
 .header-and-hero {
-    background-color: rgb(131, 80, 151);
+    background-color: #9468AC;
     min-height: 820px;
 }
 
@@ -209,7 +209,7 @@ article:hover {
   margin-top: 10px;
   margin: 40px;
   text-align: left;
-  color: rgb(163, 74, 22);
+  color: #843E15;
   line-height: 25px;
   margin-top: 10px;
 }
