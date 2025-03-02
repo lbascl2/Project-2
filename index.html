@@ -51,7 +51,7 @@
     <div class="hero-area">
       <h1>Better Baking</h1>
       <p class="subtitle">Online classes to take your baking to the next level</p>
-      <a class="register-button" href="#"> Register</a>
+      <a class="register-button" href="#enroll"> Register</a>
     </div>
     
   </div>
@@ -69,35 +69,38 @@
   </section>
 
   <section>
-    <h2 class="subtitle-3"> Our courses</h2>
+    <div class="subtitle-3-background">
+      <h2 class="subtitle-3"> Our courses</h2>
+    </div>
+
     <article class="treats-1">
       <img class="treats-image-1" src="./img/sugar-cookie.png">
-      <div>
+      <div class="section-titles">
         <h3> Cookies and Brownies Course</h3>
-        <p> paragraph explaining all the things this particular course would offer</p>
+        <p> 2 week course | 6 classes | 8 recipes | $150 </p>
         <a class="register-button" href="#">Learn more</a>
       </div>
     </article>
     <article class="treats-2">
-      <div>
+      <div class="section-titles-2">
         <h3> Cakes and Cupcakes Course</h3>
-        <p> paragraph explaining all the things this particular course would offer</p>
+        <p> 4 week course | 12 classes | 15 recipes | $300</p>
         <a class="register-button" href="#">Learn more</a>
       </div>
       <img class="treats-image-2" src="./img/cupcake.png">
     </article>
     <article class="treats-3">
       <img class="treats-image-3" src="./img/pie.png">
-      <div>
-        <h3> Pies and Cheesecake</h3>
-        <p> paragraph explaining all the things this particular course would offer</p>
+      <div class="section-titles">
+        <h3> Pies and Cheesecake course</h3>
+        <p> 6 week course | 24 classes | 26 recipes | $350</p>
         <a class="register-button" href="#">Learn more</a>
       </div>
     </article>
-    <article>
-      <div class="treats-4">
-        <h3> Pastries and doughnuts</h3>
-        <p> paragraph explaining all the things this particular course would offer</p>
+    <article class="treats-4">
+      <div class="section-titles-2">
+        <h3> Pastries and doughnuts course</h3>
+        <p> 3 week course | 10 classes | 15 recipes | $200</p>
         <a class="register-button" href="#">Learn more</a>
       </div>
       <img class="treats-image-4" src="./img/pastry.png">
@@ -105,18 +108,19 @@
   </section>
 
 
-  <section class="form-section">
-    <h2> Enroll Now</h2>
+  <section class="form-section" id="enroll">
+    <h2 class="subtitle-4"> Enroll Now</h2>
+    <p class="p-center"> Become a beter baker today</p>
 
     <form action="./thank-you.html" id="registrationForm">
 
       <div class="form-flex">
-        <label for="firstName">First Name:</label>
+        <label class="firstname-label" for="firstName">First Name:</label>
         <label for="lastName">Last Name:</label>
       </div>
 
       <div class="form-flex">
-        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" autofocus
+        <input type="text" id="firstName" name="firstName" required autocomplete="given-name"
         placeholder="Jane">
         <span id="firstNameError" class="error"></span><br><br>
       
@@ -143,9 +147,14 @@
           <option value="">Pie and Pastries</option>
           </select><br><br>
       
-        <input type="checkbox" id="terms" name="terms" >
-        <label for="terms"> I wish to be added to the mailing list to recieve updates, promos, and more</label>
+        <div class="terms">
+          <input type="checkbox" id="terms" name="terms" >
+          <div> 
+            <!-- div empty for grid  -->
+          </div>
+          <label for="terms"> I wish to be added to the mailing list to recieve updates, promos, and more</label>
           <span id="termsError" class="error"></span><br><br>
+        </div>
       
         <button class="button-2" type="submit">Register</button>
     </form>    
@@ -154,7 +163,8 @@
 </body>
 
 <footer>
-  <p> words </p>
+  <p> ©2025 All rights reserved</p>
+  <p> Privacy Policy | Terms and Conditions | Cookie Settings</p>
 
 </footer>
  
