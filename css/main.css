@@ -71,7 +71,6 @@ article {
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 50px;
-  border-radius: 30px;
 }
 
 article:hover {
@@ -281,10 +280,7 @@ section p{
 
 .subtitle-3-background {
   background-color: rgb(240, 180, 198);
-  width: 500px;
   margin:auto;
-  border-radius: 25px;
-  margin-top: 70px;
 }
 
 .treats-1 {
@@ -400,7 +396,7 @@ section p{
   font-size: 100px;
   font-weight: 400;
   text-align: center;
-  color:rgb(240, 180, 198);
+  color:#F7CFDA;
   text-align: center;
   padding-top: 90px;
 }
@@ -446,9 +442,9 @@ form {
     border-radius: 25px;
   }
   .button-2 {
-    background-color: rgb(240,180,198);
+    background-color: #F7CFDA;
     font-family: "Montserrat", arial, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
